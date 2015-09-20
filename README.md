@@ -3,7 +3,7 @@ An [Wox](https://github.com/qianlifeng/Wox) plugin that easy to upload photo to 
 
 ![](http://ww3.sinaimg.cn/large/7ce4a9f6gw1ew9cqcygs3j20m807ngo6.jpg)
 
-![](http://ww3.sinaimg.cn/large/7ce4a9f6gw1ew9cr03asqj20m804uabc.jpg)
+![screenshot: `WeiboPicBed `](http://ww3.sinaimg.cn/large/7ce4a9f6gw1ew9cr03asqj20m804uabc.jpg)
 
 
 #How to install
