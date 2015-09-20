@@ -29,7 +29,7 @@ namespace Wox.Plugin.WeiboPicBed
         /// <param name="cookiesDomain">Cookies的Domian参数，配合cookies使用；为空则取url的Host</param>
         /// <param name="encode">编码方式，用于解析html</param>
         /// <returns></returns>
-        public static HttpResponse HttpRequest(string url, Dictionary<string, string> postData = null, CookieContainer cookies = null, string userAgent = "", string referer = "", string cookiesDomain = "", Encoding encode = null, string filePath = null, Dictionary<string, string> headers = null)
+        public static HttpResponse HttpRequest(string url, Dictionary<string, string> postData = null, CookieContainer cookies = null, string userAgent = "", string referer = "", string cookiesDomain = "", Encoding encode = null, string filePath = null, Dictionary<string, string> headers = null, int timeout = 60000)
         {
             HttpResponse httpResponse = new HttpResponse();
 
@@ -37,9 +37,9 @@ namespace Wox.Plugin.WeiboPicBed
             {
                 HttpWebResponse httpWebResponse = null;
                 if (postData != null || !string.IsNullOrEmpty(filePath))
-                    httpWebResponse = CreatePostHttpResponse(url, postData, cookies: cookies, userAgent: userAgent, referer: referer, filePath: filePath, headers:headers);
+                    httpWebResponse = CreatePostHttpResponse(url, postData, cookies: cookies, userAgent: userAgent, referer: referer, filePath: filePath, headers:headers, timeout: timeout);
                 else
-                    httpWebResponse = CreateGetHttpResponse(url, cookies: cookies, userAgent: userAgent, referer: referer, headers: headers);
+                    httpWebResponse = CreateGetHttpResponse(url, cookies: cookies, userAgent: userAgent, referer: referer, headers: headers, timeout: timeout);
 
                 httpResponse.Url = httpWebResponse.ResponseUri.ToString();
                 httpResponse.HttpCode = (int)httpWebResponse.StatusCode;
@@ -150,9 +150,9 @@ namespace Wox.Plugin.WeiboPicBed
         /// <param name="cookiesDomain">Cookies的Domian参数，配合cookies使用；为空则取url的Host</param>
         /// <param name="encode">编码方式，用于解析html</param>
         /// <returns></returns>
-        public static string GetHttpContent(string url, Dictionary<string, string> postData = null, CookieContainer cookies = null, string userAgent = "", string referer = "", string cookiesDomain = "", Encoding encode = null, string filePath = null, Dictionary<string, string> headers = null)
+        public static string GetHttpContent(string url, Dictionary<string, string> postData = null, CookieContainer cookies = null, string userAgent = "", string referer = "", string cookiesDomain = "", Encoding encode = null, string filePath = null, Dictionary<string, string> headers = null, int timeout = 60000)
         {
-            return HttpHelper.HttpRequest(url, postData, cookies, userAgent, referer, cookiesDomain, encode, filePath, headers).Content;
+            return HttpHelper.HttpRequest(url, postData, cookies, userAgent, referer, cookiesDomain, encode, filePath, headers, timeout).Content;
         }
 
         /// <summary>

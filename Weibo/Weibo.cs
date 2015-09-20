@@ -114,7 +114,8 @@ namespace Wox.Plugin.WeiboPicBed
                 headers: headers,
                 referer: "http://js.t.sinajs.cn/t5/home/static/swf/MultiFilesUpload.swf?version=559f4bc1f6266504",
                 encode: Encoding.GetEncoding("UTF-8"),
-                filePath: picPath);
+                filePath: picPath,
+                timeout: 5 * 60 * 1000);
 
             var match = regPicId.Match(content);
             if (match.Success)
