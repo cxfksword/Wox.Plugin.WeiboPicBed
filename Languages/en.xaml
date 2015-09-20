@@ -1,0 +1,18 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+    <system:String x:Key="wox_plugin_weibopicbed_settings_account">Weibo Account:</system:String>
+    <system:String x:Key="wox_plugin_weibopicbed_settings_password">Weibo Password:</system:String>
+
+    <system:String x:Key="wox_plugin_weibopicbed_image_not_support">Only support .jpg, .png, .gif image file.</system:String>
+    <system:String x:Key="wox_plugin_weibopicbed_upload_failed">Upload pic failed! Please try again later.</system:String>
+    <system:String x:Key="wox_plugin_weibopicbed_start_upload">Start to upload</system:String>
+    <system:String x:Key="wox_plugin_weibopicbed_login_failed">Login to SINA Weibo failed! Please check account and password.</system:String>
+    <system:String x:Key="wox_plugin_weibopicbed_not_input_setttings">Please set Weibo Account and Password in Wox Setting firstly.</system:String>
+    <system:String x:Key="wox_plugin_weibopicbed_upload_busy">Upload busy now! Please try again later.</system:String>
+
+    <system:String x:Key="wox_plugin_weibopicbed_plugin_name">WeiboPicBed</system:String>
+    <system:String x:Key="wox_plugin_weibopicbed_plugin_description">Upload photo to weibo picbed</system:String>
+
+</ResourceDictionary>

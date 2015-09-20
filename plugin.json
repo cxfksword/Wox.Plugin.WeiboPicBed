@@ -1,0 +1,12 @@
+﻿{
+  "ID":"8d80430bbaeb4e49a002213c3bd88c66",  
+  "ActionKeyword":"tu",                   
+  "Name":"Wox.Plugin.WeiboPicBed",                             
+  "Description":"Upload photo to weibo picbed",    
+  "Author":"cxfksword",                    
+  "Version":"1.0.0",                        
+  "Language":"csharp",                       
+  "Website":"https://github.com/cxfksword/Wox.Plugin.WeiboPicBed",        
+  "IcoPath": "Images\\app.png",              
+  "ExecuteFileName":"Wox.Plugin.WeiboPicBed.dll"  
+}

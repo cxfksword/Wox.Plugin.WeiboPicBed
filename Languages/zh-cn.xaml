@@ -1,0 +1,18 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+    <system:String x:Key="wox_plugin_weibopicbed_settings_account">微博帐号:</system:String>
+    <system:String x:Key="wox_plugin_weibopicbed_settings_password">微博密码:</system:String>
+
+    <system:String x:Key="wox_plugin_weibopicbed_image_not_support">只支持 .jpg, .png, .gif 图片格式文件.</system:String>
+    <system:String x:Key="wox_plugin_weibopicbed_upload_failed">上传失败! 请稍候再试.</system:String>
+    <system:String x:Key="wox_plugin_weibopicbed_start_upload">开始上传图片</system:String>
+    <system:String x:Key="wox_plugin_weibopicbed_login_failed">登录新浪微博失败! 请检查帐号密码是否正确.</system:String>
+    <system:String x:Key="wox_plugin_weibopicbed_not_input_setttings">请先在Wox的插件设置中填写微博帐号和密码.</system:String>
+    <system:String x:Key="wox_plugin_weibopicbed_upload_busy">上传繁忙!请稍候再试.</system:String>
+
+    <system:String x:Key="wox_plugin_weibopicbed_plugin_name">微博图床</system:String>
+    <system:String x:Key="wox_plugin_weibopicbed_plugin_description">上传图片到微博图床</system:String>
+
+</ResourceDictionary>
